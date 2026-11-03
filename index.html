@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your daily water intake and reach your hydration goal.">
+    <title>Daily Water Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="tracker-container">
+        <header>
+            <h1>Daily Water Tracker</h1>
+            <p>Stay hydrated and track your daily water intake.</p>
+        </header>
+
+        <section class="water-display" aria-live="polite">
+            <p class="intake-label">Water Drunk Today</p>
+
+            <div class="water-number">
+                <span id="water-count">0</span>
+                <span class="unit">ml</span>
+            </div>
+
+            <p class="daily-goal">Daily Goal: 2000 ml</p>
+
+            <p id="goal-message" class="goal-message hidden">
+                Goal met! Great job staying hydrated!
+            </p>
+        </section>
+
+        <section class="tracker-actions">
+            <h2>Add Water</h2>
+
+            <div class="button-container">
+                <button id="small-glass" class="water-button" type="button">
+                    +150 ml
+                    <span>Small Glass</span>
+                </button>
+
+                <button id="glass" class="water-button" type="button">
+                    +250 ml
+                    <span>Glass</span>
+                </button>
+
+                <button id="bottle" class="water-button" type="button">
+                    +500 ml
+                    <span>Bottle</span>
+                </button>
+
+                <button id="reset" class="reset-button" type="button">
+                    Reset
+                </button>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>How to Use</h2>
+
+            <ul>
+                <li>Select a button to add the amount of water you drink.</li>
+                <li>Your total intake updates automatically.</li>
+                <li>Reach 2000 ml to complete your daily goal.</li>
+                <li>Use Reset to start tracking from zero.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
