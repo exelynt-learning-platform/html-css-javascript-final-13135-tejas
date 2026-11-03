@@ -1,0 +1,167 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #eff6ff;
+    color: #1e293b;
+}
+
+/* Main tracker card */
+.tracker-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(30, 64, 175, 0.08);
+}
+
+/* Page heading */
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Water intake display */
+.water-display {
+    margin: 30px 0;
+    padding: 25px;
+    text-align: center;
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 12px;
+}
+
+.intake-label {
+    color: #475569;
+    font-weight: bold;
+}
+
+.water-number {
+    margin: 15px 0;
+    color: #0f172a;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.unit {
+    font-size: 24px;
+    color: #64748b;
+}
+
+.daily-goal {
+    color: #64748b;
+}
+
+/* Goal completion styling */
+.goal-met {
+    color: #2563eb;
+}
+
+.goal-message {
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.water-button,
+.reset-button {
+    flex: 1;
+    min-width: 100px;
+    padding: 14px 12px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.water-button {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.water-button span {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.water-button:hover {
+    background-color: #bfdbfe;
+}
+
+.reset-button {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-color: #fecaca;
+}
+
+.reset-button:hover {
+    background-color: #fecaca;
+}
+
+/* Instructions */
+.instructions {
+    margin-top: 30px;
+}
+
+.instructions h2,
+.tracker-actions h2 {
+    color: #1e40af;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Small screen layout */
+@media (max-width: 480px) {
+    .tracker-container {
+        padding: 20px;
+    }
+
+    .water-number {
+        font-size: 44px;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .water-button,
+    .reset-button {
+        flex: 1 1 40%;
+    }
+}
